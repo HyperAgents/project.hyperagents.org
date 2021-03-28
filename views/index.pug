@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+    head
+        title Home - HyperAgents
+        meta(charset = 'utf-8')
+        meta(name = 'viewport', content = 'width=device-width, initial-scale=1')
+        link(rel = 'stylesheet', href = '/css/main.css')
+
+    body
+        include header.pug
+
+        section#banner
+            h1 Hypermedia Multi-Agent Systems
+            p(style = 'font-size: 1.3em;') Rethinking Multi-Agent Systems for the World Wide Web.
+            //h1 Hypermedia Communities of <br/> People and Autonomous Agents
+            //p Weaving a Web for people and artificial agents.
+            //p Towards a new generation of human-centric, Web-based autonomous systems
+
+        section.wrapper
+            header.align-center
+                //h2 Weaving a Web for People and Artificial Agents
+                //h2 Rethinking Multi-Agent Systems for the World Wide Web
+                //h2 Hypermedia Multi-Agent Systems
+                h2 Towards Hybrid Communities of People <br/> and Artificial Agents on the Web
+                //p(style = 'font-size: 1.2em;') Rethinking Multi-Agent Systems for the World Wide Web
+            .inner
+                //p(style = 'font-size: 1.2em;')
+                p HyperAgents is an <a href="https://anr.fr/en/">ANR</a>/<a href="http://www.snf.ch/en/">SNF</a> project working towards the deployment of world-wide hybrid communities of people and artificial agents on the Web. For this purpose, we are defining a new class of multi-agent systems (MAS) that are: (i) aligned with the Web architecture to inherit the properties of the Web as a world-wide, open, and long-lived system, and (ii) transparent and accountable to support acceptance by people. Our systems use semantic hypermedia to enable uniform interaction among heterogeneous entities in MAS: people, artificial agents, devices, digital serivces, knowledge repositories, etc. We refer to this new class of Web-based MAS as Hypermedia MAS.
+
+                p To undertake this investigation, HyperAgents brings together internationally recognized researchers actively contributing to research on autonomous agents and MAS, the Web architecture and the Web of Things, Semantic Web and Linked Data, and to the standardization of the Web.
+
+                div(class = ['flex', 'flex-3'], style='margin-left: 8em; margin-right: 8em; align-items: center;')
+                    div
+                        img(src = '/img/emse-logo.png', style = 'height: 130px;')
+                    div
+                        img(src = '/img/inria-logo.png', style = 'height: 70px;')
+                    div
+                        img(src = '/img/hsg-logo.png', style = 'height: 70px;')
+
+
+        include footer.pug
+
+        script(src = '/js/jquery.min.js')
+        script(src = '/js/skel.min.js')
+        script(src = '/js/util.js')
+        script(src = '/js/main.js')

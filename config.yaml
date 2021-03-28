@@ -1,0 +1,28 @@
+openapi: 3.0.2
+info:
+  title: 'HyperAgents Project Website'
+  version: 0.0.1
+x-walder-datasources:
+  - https://pod.inrupt.com/andreiciortea/profile/card#me
+paths:
+  /:
+    get:
+      summmary: Home page
+      responses:
+        200:
+          description: Home page
+          x-walder-input-text/html: index.pug
+  /team:
+    get:
+      summmary: Team page
+      responses:
+        200:
+          description: Team page
+          x-walder-input-text/html: team.pug
+x-walder-errors:
+  404:
+    description: page not found error
+    x-walder-input-text/html: error404.html
+  500:
+    description: internal server error
+    x-walder-input-text/html: error500.html
