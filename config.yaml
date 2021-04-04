@@ -15,6 +15,20 @@ paths:
   /team:
     get:
       summmary: Team page
+      x-walder-query:
+        graphql-query: >
+          {
+            id @single
+            type
+            fn
+          }
+        json-ld-context: >
+          {
+            "@context": {
+              "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+              "fn": "http://www.w3.org/2006/vcard/ns#fn"
+            }
+          }
       responses:
         200:
           description: Team page
