@@ -20,13 +20,15 @@ paths:
           {
             id @single
             type
-            fn
+            fn @single
+            img @single
           }
         json-ld-context: >
           {
             "@context": {
               "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              "fn": "http://www.w3.org/2006/vcard/ns#fn"
+              "fn": "http://www.w3.org/2006/vcard/ns#fn",
+              "img": "http://xmlns.com/foaf/0.1/img"
             }
           }
       responses:
