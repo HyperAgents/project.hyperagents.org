@@ -65,11 +65,11 @@ html(lang="en")
                             img(src="/img/adnane.jpg", alt="Person 3")
                         h3 Adnane Mansour
                         p MINES Saint-Étienne &amp; WIMMICS
-                    div(class = "box person")
-                        div(class="image round")
-                            img(src="/img/simon.jpg", alt="Person 4")
-                        h3 Simon Mayer
-                        p Interactions-HSG &amp; ETH Zürich
+                    div(class="image round")
+                            img(src=data[1].img, alt=data[1].fn)
+                        //-h3 Simon Mayer
+                        h3 #{data[1].fn}
+                        p Interactions-HSG
                     div(class = "box person")
                         div(class="image round")
                             img(src="/img/franck.jpg", alt="Person 1")
