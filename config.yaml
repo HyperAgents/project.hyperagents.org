@@ -4,7 +4,7 @@ info:
   version: 0.0.1
 x-walder-datasources:
   - https://pod.inrupt.com/andreiciortea/profile/card#me
-  - https://smnmyr.github.io/smnmyr-card#me
+#  - https://smnmyr.github.io/smnmyr-card#me
 paths:
   /:
     get:
